@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Infovis</title>
+
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+</style>
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-6">
+					<form role="form">
+						 <textarea id="inputData" cols="80" class='inputData' rows="30"> </textarea>
+                                                <br/>
+<button id="updateBtn" type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+  Update
+</button>
+					</form>
+				</div>
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-body">
+						   <svg width="600" height="680"></svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/d3/d3.min.js"></script>
+    <script src="js/bubble.js"></script>
+
+  </body>
+</html>
